@@ -12,7 +12,7 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RB/RBS/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/R/RB/RBS/%{pnam}-%{version}.tar.gz
 # Source0-md5:	4055bc73d33ebfb27e371d28ced8e8de
 BuildRequires:	perl-BFD
 BuildRequires:	perl-IPC-Run3
