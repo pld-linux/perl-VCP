@@ -17,6 +17,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/R/RB/RBS/%{pnam}-%{version}.tar.
 BuildRequires:	perl-BFD
 BuildRequires:	perl-IPC-Run3
 BuildRequires:	perl-PodToHTML
+BuildRequires:	perl-Text-Table
 BuildRequires:	perl-XML-AutoWriter
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
