@@ -5,6 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pnam	VCP
 Summary:	Data::VCP - Versioned Copy, copying hierarchies of versioned files
+Summary(pl):	Data::VCP - wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików
 Name:		perl-VCP
 Version:	0.9
 Release:	1
@@ -13,12 +14,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RB/RBS/%{pnam}-%{version}.tar.gz
 # Source0-md5:	4055bc73d33ebfb27e371d28ced8e8de
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	perl-BFD
 BuildRequires:	perl-IPC-Run3
 BuildRequires:	perl-PodToHTML
 BuildRequires:	perl-XML-AutoWriter
-BuildRequires:	perl-BFD
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,6 +27,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Versioned Copy, copying hierarchies of versioned files.
+
+%description -l pl
+Wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików.
 
 %prep
 %setup -q -n %{pnam}-%{version}
