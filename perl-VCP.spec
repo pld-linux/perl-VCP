@@ -18,6 +18,7 @@ BuildRequires:	perl-BFD
 BuildRequires:	perl-IPC-Run3
 BuildRequires:	perl-PodToHTML
 BuildRequires:	perl-Regexp-Shellish >= 0.93
+BuildRequires:	perl-Text-Diff
 BuildRequires:	perl-Text-Table
 BuildRequires:	perl-XML-AutoWriter
 BuildRequires:	perl-devel >= 1:5.8.0
