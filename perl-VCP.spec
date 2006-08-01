@@ -8,7 +8,7 @@ Summary:	Data::VCP - Versioned Copy, copying hierarchies of versioned files
 Summary(pl):	Data::VCP - wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików
 Name:		perl-VCP
 Version:	0.9
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
