@@ -1,6 +1,7 @@
 #
 # Conditional build:
 %bcond_with	tests	# do not perform "make test"
+#			  [why it was disabled instead of fixing?]
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	VCP
