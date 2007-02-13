@@ -6,7 +6,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	VCP
 Summary:	Data::VCP - Versioned Copy, copying hierarchies of versioned files
-Summary(pl.UTF-8):   Data::VCP - wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików
+Summary(pl.UTF-8):	Data::VCP - wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików
 Name:		perl-VCP
 Version:	0.9
 Release:	3
