@@ -8,13 +8,16 @@
 Summary:	Data::VCP - Versioned Copy, copying hierarchies of versioned files
 Summary(pl.UTF-8):	Data::VCP - wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików
 Name:		perl-VCP
-Version:	0.9
+%define _snap	20050110
+%define	_ver	0.9
+Version:	%{_ver}_%{_snap}
 Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/R/RB/RBS/%{pnam}-%{version}.tar.gz
-# Source0-md5:	4055bc73d33ebfb27e371d28ced8e8de
+Source0:	http://www.cpan.org/authors/id/A/AU/AUTRIJUS/VCP-autrijus-snapshot-%{_ver}-%{_snap}.tar.gz
+# Source0-md5:	c01249d810904f5b4f6080979673a514
+URL:		http://search.cpan.org/~autrijus/VCP-autrijus-snapshot/
 BuildRequires:	perl-BFD
 BuildRequires:	perl-IPC-Run3
 BuildRequires:	perl-PodToHTML
@@ -27,7 +30,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(mkss)'
+%define		_noautoreq	'perl(mkss)' 'perl(VCP::.*)' 'perl(RevML::.*)'
 
 %description
 Versioned Copy, copying hierarchies of versioned files.
@@ -36,7 +39,7 @@ Versioned Copy, copying hierarchies of versioned files.
 Wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików.
 
 %prep
-%setup -q -n %{pnam}-%{version}
+%setup -q -n VCP-autrijus-snapshot-%{_ver}-%{_snap}
 
 %build
 %{__perl} Makefile.PL \
