@@ -11,7 +11,7 @@ Name:		perl-VCP
 %define _snap	20050110
 %define	_ver	0.9
 Version:	%{_ver}_%{_snap}
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
