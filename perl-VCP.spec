@@ -3,7 +3,6 @@
 %bcond_with	tests	# do perform "make test"
 #			  [why it was disabled instead of fixing?]
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pnam	VCP
 Summary:	Data::VCP - Versioned Copy, copying hierarchies of versioned files
 Summary(pl.UTF-8):	Data::VCP - wersjonowane kopie - kopiowanie hierarchii wersjonowanych plików
